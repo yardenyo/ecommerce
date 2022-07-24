@@ -1,5 +1,6 @@
 import "./Info.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import imagesData from "../shared/infoImagesData";
 
 const Info = ({ click }) => {
@@ -32,7 +33,7 @@ const Info = ({ click }) => {
             illum quia ipsum soluta nisi veniam.
           </div>
           <div className="about-button">
-            <a href="/">Find out more</a>
+            <Link to="about">Find out more</Link>
           </div>
         </div>
         <div className="about-img-section">

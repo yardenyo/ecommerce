@@ -1,12 +1,18 @@
-import "./App.css";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+
+//Screens
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Women from "./screens/Women";
+import Men from "./screens/Men";
+import Cart from "./screens/Cart";
+import Contact from "./screens/Contact";
+
+//Components
 import FixedBar from "./components/fixedBar/FixedBar";
 import Hamburger from "./components/hamburger/Hamburger";
 import Header from "./components/header/Header";
-import Info from "./components/info/Info";
-import Women from "./components/women/Women";
-import Men from "./components/men/Men";
-import Contact from "./components/contact/Contact";
 
 function App() {
   const [toggleHamburger, setToggleHamburger] = useState(false);
@@ -18,10 +24,22 @@ function App() {
       />
       <Hamburger show={toggleHamburger} />
       <FixedBar />
-      <Info click={() => setToggleHamburger(false)} />
-      <Women click={() => setToggleHamburger(false)} />
-      <Men click={() => setToggleHamburger(false)} />
-      <Contact click={() => setToggleHamburger(false)} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Home
+              toggleHamburger={toggleHamburger}
+              setToggleHamburger={setToggleHamburger}
+            />
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
