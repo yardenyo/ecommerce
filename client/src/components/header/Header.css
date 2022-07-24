@@ -1,0 +1,74 @@
+.cover-video {
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  gap: 1rem;
+}
+
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-title {
+  text-align: center;
+  color: #fff;
+  animation: 3s anim-title ease-out;
+}
+
+@keyframes anim-title {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.header-title h1 {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+}
+
+.header-title h5 {
+  font-size: 2rem;
+  font-weight: 200;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 620px) {
+  .header-title h1 {
+    font-size: calc(1.8vw + 2rem);
+  }
+
+  .header-title h5 {
+    font-size: calc(0.5vw + 1.5rem);
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 441px) {
+  .header-title h1 {
+    font-size: calc(1.8vw + 1.5rem);
+  }
+
+  .header-title h5 {
+    font-size: calc(0.5vw + 1rem);
+    font-weight: 200;
+  }
+}

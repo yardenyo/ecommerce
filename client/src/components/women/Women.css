@@ -1,0 +1,101 @@
+.women {
+  position: relative;
+  background: #434343;
+  color: #fff;
+  animation: 3s anim-container ease-out;
+  min-height: 100vh;
+}
+
+@keyframes anim-container {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.women-title > h1 {
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Square Peg", cursive;
+  padding: 20px;
+  margin-top: 10px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.women-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.single-card {
+  height: auto;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.single-card > img {
+  background: #fff;
+  height: 400px;
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  transition-duration: 1s;
+}
+
+.single-card > .text {
+  font-size: 0.9rem;
+}
+
+.women-button > a {
+  display: block;
+  width: 15%;
+  text-decoration: none;
+  text-align: center;
+  color: #171717;
+  background-color: #f4f4f4;
+  padding: 8px 16px;
+  border: 1px solid #171717;
+  font-size: 1.3rem;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.women-button > a:hover {
+  background: #171717;
+  color: #f4f4f4;
+}
+
+@media (max-width: 1300px) {
+  .women-button > a {
+    width: 30%;
+  }
+}
+
+@media (max-width: 950px) {
+  .women-button > a {
+    width: 40%;
+  }
+}
+
+@media (max-width: 580px) {
+  .women-button > a {
+    width: 60%;
+  }
+}

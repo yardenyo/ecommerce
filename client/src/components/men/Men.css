@@ -1,0 +1,130 @@
+.men {
+  background: #f6f6f6;
+  color: #000;
+  min-height: 100vh;
+}
+
+.custom-shape-divider-top-men {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-men svg {
+  position: relative;
+  display: block;
+  width: calc(214% + 1.3px);
+  height: 73px;
+}
+
+.custom-shape-divider-top-men .shape-fill {
+  fill: url(#grad1);
+}
+
+.men {
+  position: relative;
+  animation: 3s anim-container ease-out;
+  min-height: 100vh;
+}
+
+@keyframes anim-container {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.men-title > h1 {
+  font-size: 6rem;
+  color: #000;
+  font-family: "Square Peg", cursive;
+  padding: 20px;
+  margin-top: 10px;
+  text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.6);
+}
+
+.men-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.single-card {
+  height: auto;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.single-card > img {
+  background: #fff;
+  height: 400px;
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  transition-duration: 1s;
+}
+
+.single-card > .header {
+  font-size: 1.2rem;
+}
+
+.single-card > .text {
+  font-size: 0.9rem;
+  opacity: 0.4;
+}
+
+.men-button > a {
+  display: block;
+  width: 15%;
+  text-decoration: none;
+  text-align: center;
+  color: #171717;
+  background-color: #f4f4f4;
+  padding: 8px 16px;
+  border: 1px solid #171717;
+  font-size: 1.3rem;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.men-button > a:hover {
+  background: #171717;
+  color: #f4f4f4;
+}
+
+@media (max-width: 1300px) {
+  .men-button > a {
+    width: 30%;
+  }
+}
+
+@media (max-width: 950px) {
+  .men-button > a {
+    width: 40%;
+  }
+}
+
+@media (max-width: 580px) {
+  .men-button > a {
+    width: 60%;
+  }
+}
