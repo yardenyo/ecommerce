@@ -25,7 +25,7 @@ const FixedBar = () => {
     } else if (scrollTop > 2700 && scrollTop < 3400) {
       setActive("#men");
     } else if (scrollTop > 3400) {
-      setActive("#contact");
+      setActive("#footer");
     }
   }, [scrollTop, active]);
 
@@ -68,10 +68,10 @@ const FixedBar = () => {
             }
           ></i>
         </a>
-        <a href="#contact" onClick={() => setActive("#contact")}>
+        <a href="#footer" onClick={() => setActive("#footer")}>
           <i
             className={
-              active === "#contact"
+              active === "#footer"
                 ? "fa-solid fa-comment-dots active"
                 : "fa-solid fa-comment-dots"
             }

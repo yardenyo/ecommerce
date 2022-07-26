@@ -7,7 +7,8 @@ import About from "./screens/About/About";
 import Women from "./screens/Women";
 import Men from "./screens/Men";
 import Cart from "./screens/Cart";
-import Contact from "./screens/Contact";
+import Contact from "./screens/Contact/Contact";
+import ErrorPage from "./screens/404/Error";
 
 //Components
 import Hamburger from "./components/hamburger/Hamburger";
@@ -37,6 +38,7 @@ function App() {
         <Route path="/men" element={<Men />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

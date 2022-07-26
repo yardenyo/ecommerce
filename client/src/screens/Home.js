@@ -1,7 +1,7 @@
 import Info from "../components/info/Info";
 import Women from "../components/women/Women";
 import Men from "../components/men/Men";
-import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/footer";
 import FixedBar from "../components/fixedBar/FixedBar";
 
 function Home({ toggleHamburger, setToggleHamburger }) {
@@ -11,7 +11,7 @@ function Home({ toggleHamburger, setToggleHamburger }) {
       <Info click={() => setToggleHamburger(false)} />
       <Women click={() => setToggleHamburger(false)} />
       <Men click={() => setToggleHamburger(false)} />
-      <Contact click={() => setToggleHamburger(false)} />
+      <Footer click={() => setToggleHamburger(false)} />
     </div>
   );
 }
