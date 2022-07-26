@@ -10,7 +10,6 @@ import Cart from "./screens/Cart";
 import Contact from "./screens/Contact";
 
 //Components
-import FixedBar from "./components/fixedBar/FixedBar";
 import Hamburger from "./components/hamburger/Hamburger";
 import Header from "./components/header/Header";
 
@@ -23,7 +22,6 @@ function App() {
         setToggleHamburger={setToggleHamburger}
       />
       <Hamburger show={toggleHamburger} />
-      <FixedBar />
       <Routes>
         <Route
           path="/"

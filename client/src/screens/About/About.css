@@ -21,7 +21,7 @@
 }
 
 .About-container {
-  width: 70%;
+  width: 80%;
   position: absolute;
   left: 65%;
   transform: translate(-50%, 10%);
@@ -48,7 +48,7 @@
 }
 
 .About-me-text {
-  width: 60%;
+  width: 50%;
   color: rgba(133, 133, 133, 0.7);
 }
 
@@ -78,4 +78,98 @@
   margin-top: 20px;
   margin-left: 10px;
   color: rgba(136, 136, 136, 0.6);
+}
+
+@media (max-width: 1400px) {
+  .About {
+    height: 140vh;
+  }
+
+  .About-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: -15%;
+  }
+
+  .About-me-img > img,
+  .About-me-img {
+    margin: 0 auto;
+    left: 50%;
+  }
+
+  .About-me-header,
+  .About-me-subHeader {
+    text-align: center;
+  }
+
+  .About-me-header {
+    margin-top: 20px;
+  }
+
+  .About-me-text {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .About-skills {
+    margin-top: 700px;
+  }
+
+  .coding-skills-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .About-me-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .About {
+    height: 160vh;
+  }
+
+  .About-container {
+    width: 80%;
+  }
+
+  .About-me-text {
+    width: 100%;
+  }
+
+  .coding-skills-badges {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -80px;
+    width: 20%;
+  }
+
+  .About-skills {
+    margin-top: 700px;
+  }
+}
+
+@media (max-width: 550px) {
+  .About {
+    height: 240vh;
+  }
+
+  .About-skills {
+    margin-top: 750px;
+  }
+
+  .coding-skills-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .coding-skills-container {
+    margin-top: -120px;
+  }
 }
