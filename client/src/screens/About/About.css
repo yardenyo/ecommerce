@@ -1,3 +1,7 @@
+.About {
+  height: 100vh;
+}
+
 .About-title {
   text-align: center;
   margin-top: 60px;
@@ -6,7 +10,9 @@
 
 .About-title > h1 {
   font-size: 6rem;
-  color: #000;
+  color: #000000;
+  font-weight: 200;
+  opacity: 0.6;
   font-family: "Square Peg", cursive;
   padding: 20px;
   margin-top: 10px;
@@ -15,10 +21,10 @@
 }
 
 .About-container {
-  width: 90%;
+  width: 70%;
   position: absolute;
   left: 65%;
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 10%);
   display: flex;
   align-items: center;
 }
@@ -44,4 +50,32 @@
 .About-me-text {
   width: 60%;
   color: rgba(133, 133, 133, 0.7);
+}
+
+.About-skills {
+  margin-top: 400px;
+}
+
+.coding-skills-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+.coding-skills-badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 150px;
+  row-gap: 50px;
+}
+
+.badge-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.badge-text {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: rgba(136, 136, 136, 0.6);
 }
